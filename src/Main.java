@@ -1,11 +1,14 @@
 package src;
 
-import src.com.problemsolving.arraysandhashing.ValidAnagram;
+import src.com.problemsolving.arraysandhashing.GroupAnagrams;
 
 public class Main {
   public static void main(String[] args) {
-    ValidAnagram validAnagram = new ValidAnagram();
-    var x = validAnagram.isAnagram("anagram", "nagaram");
-    System.out.println(x);
+    GroupAnagrams groupAnagrams = new GroupAnagrams();
+    var x = groupAnagrams.groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"});
+    for (var sub : x
+    ) {
+      System.out.println(sub.toString());
+    }
   }
 }
