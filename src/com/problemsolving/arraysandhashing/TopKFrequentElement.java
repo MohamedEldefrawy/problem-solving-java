@@ -33,7 +33,7 @@ public class TopKFrequentElement {
   }
 
   public int[] topKFrequentBucketSort(int[] nums, int k) {
-    List<Integer>[] bucket = new ArrayList[nums.length + 1];;
+    List<Integer>[] bucket = new ArrayList[nums.length + 1];
     int[] result = new int[k];
     Map<Integer, Integer> map = new HashMap<>();
     for (int num : nums) {
