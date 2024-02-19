@@ -1,27 +1,19 @@
 package src;
 
-import src.com.problemsolving.arraysandhashing.GroupAnagrams;
-import src.com.problemsolving.arraysandhashing.ProductExceptSelf;
-import src.com.problemsolving.arraysandhashing.TopKFrequentElement;
-import src.com.problemsolving.arraysandhashing.ValidSudoku;
+import src.com.problemsolving.arraysandhashing.StringDecodeAndEncode;
+
+import java.util.List;
 
 public class Main {
-  public static void main(String[] args) {
-    char[][] board = {
-            {'5','3','.','.','7','.','.','.','.'},
-            {'6','.','.','1','9','5','.','.','.'},
-            {'.','9','8','.','.','.','.','6','.'},
-            {'8','.','.','.','6','.','.','.','3'},
-            {'4','.','.','8','.','3','.','.','1'},
-            {'7','.','.','.','2','.','.','.','6'},
-            {'.','6','.','.','.','.','2','8','.'},
-            {'.','.','.','4','1','9','.','.','5'},
-            {'.','.','.','.','8','.','.','7','9'}
-    };
-    ValidSudoku validSudoku = new ValidSudoku();
-    var x = validSudoku.isValidSudoku(board);
+    public static void main(String[] args) {
+        StringDecodeAndEncode stringDecodeAndEncode = new StringDecodeAndEncode();
+//        String encodedString = stringDecodeAndEncode.encode(List.of("neet.", "code.", "love.", "you."));
+        String encodedString = stringDecodeAndEncode.encode(List.of(""));
+//        String encodedString = stringDecodeAndEncode.encode(List.of());
+//        String encodedString = stringDecodeAndEncode.encode(List.of("","   ","!@#$%^&*()_+","LongStringWithNoSpaces","Another, String With, Commas"));
+//        String encodedString = stringDecodeAndEncode.encode(List.of(""));
+        List<String> strings = stringDecodeAndEncode.decode(encodedString);
 
-    System.out.println(x);
-
-  }
+        strings.forEach(System.out::println);
+    }
 }
