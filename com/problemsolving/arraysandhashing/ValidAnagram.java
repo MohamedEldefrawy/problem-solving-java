@@ -1,4 +1,4 @@
-package src.com.problemsolving.arraysandhashing;
+package com.problemsolving.arraysandhashing;
 
 import java.util.Arrays;
 

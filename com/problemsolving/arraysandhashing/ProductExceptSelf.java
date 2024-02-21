@@ -1,8 +1,6 @@
-package src.com.problemsolving.arraysandhashing;
+package com.problemsolving.arraysandhashing;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class ProductExceptSelf {
     public int[] productExceptSelf(int[] nums) {
