@@ -1,14 +1,18 @@
 package com.problemsolving;
 
-import com.problemsolving.bitmanipulation.BitWiseAndOfNumbersRange;
+import com.problemsolving.twopointers.ThreeSum;
+import java.util.List;
+import java.util.Set;
 
 public class Main {
   public static void main(String[] args) {
 
-    BitWiseAndOfNumbersRange bitWiseAndOfNumbersRange = new BitWiseAndOfNumbersRange();
-//    int result = bitWiseAndOfNumbersRange.rangeBitwiseAnd(5,7);
-//    int result = bitWiseAndOfNumbersRange.rangeBitwiseAnd(0,0);
-    int result = bitWiseAndOfNumbersRange.rangeBitwiseAnd(1,2147483647);
-    System.out.println(result);
+    ThreeSum threeSum = new ThreeSum();
+//    List<List<Integer>> result = threeSum.threeSum(new int[]{-1, 0, 1, 2, -1, -4});
+//    List<List<Integer>> result = threeSum.threeSum(new int[]{0,1,1});
+//    List<List<Integer>> result = threeSum.threeSum(new int[]{0,0,0});
+//    List<List<Integer>> result = threeSum.threeSum(new int[]{0,0,0,0});
+    List<List<Integer>> result = threeSum.threeSum(new int[]{-2,0,1,1,2});
+    System.out.println(result.toString());
   }
 }
