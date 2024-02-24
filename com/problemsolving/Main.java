@@ -1,14 +1,13 @@
 package com.problemsolving;
 
-import com.problemsolving.twopointers.ContainerWithMostWater;
+import com.problemsolving.slidingwindow.BestTimeToBuyAndSellStock;
 
 public class Main {
   public static void main(String[] args) {
-    ContainerWithMostWater containerWithMostWater = new ContainerWithMostWater();
-//    int result = containerWithMostWater.maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7});
-//    int result = containerWithMostWater.maxArea(new int[]{1, 1});
-    int result = containerWithMostWater.maxArea(new int[]{0, 2});
-//    int result = containerWithMostWater.maxArea(new int[]{1, 0, 0, 0, 0, 0, 0, 2, 2});
+    BestTimeToBuyAndSellStock bestTimeToBuyAndSellStock = new BestTimeToBuyAndSellStock();
+//    int result = bestTimeToBuyAndSellStock.maxProfit(new int[]{7,6,4,3,1});
+//    int result = bestTimeToBuyAndSellStock.maxProfit(new int[]{2,1,4});
+    int result = bestTimeToBuyAndSellStock.maxProfit(new int[]{2,4,1});
     System.out.println(result);
   }
 }
