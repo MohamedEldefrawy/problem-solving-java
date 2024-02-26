@@ -1,19 +1,15 @@
 package com.problemsolving;
 
-import com.problemsolving.slidingwindow.LongestSubStringWithoutRepeatingCharacters;
+import com.problemsolving.slidingwindow.LongestRepeatingCharacterReplacement;
 
 public class Main {
   public static void main(String[] args) {
-    LongestSubStringWithoutRepeatingCharacters
-        longestSubStringWithoutRepeatingCharacters
-        = new LongestSubStringWithoutRepeatingCharacters();
-//    int result = longestSubStringWithoutRepeatingCharacters.lengthOfLongestSubstring("abcabcbb");
-    int result = longestSubStringWithoutRepeatingCharacters.lengthOfLongestSubstring("pwwkew");
-//    int result = longestSubStringWithoutRepeatingCharacters.lengthOfLongestSubstring("au");
-//    int result = longestSubStringWithoutRepeatingCharacters.lengthOfLongestSubstring("   ");
-//    int result = longestSubStringWithoutRepeatingCharacters.lengthOfLongestSubstring("bdb");
-//    int result = longestSubStringWithoutRepeatingCharacters.lengthOfLongestSubstring("dvdf");
-//    int result = longestSubStringWithoutRepeatingCharacters.lengthOfLongestSubstring("aab");
+    LongestRepeatingCharacterReplacement  longestRepeatingCharacterReplacement = new LongestRepeatingCharacterReplacement();
+//    int result = longestRepeatingCharacterReplacement.characterReplacement("ABAB",2);
+    int result = longestRepeatingCharacterReplacement.characterReplacement("AABABBA",1);
+//    int result = longestRepeatingCharacterReplacement.characterReplacement("A",1);
+//    int result = longestRepeatingCharacterReplacement.characterReplacement("ABAA",0);
+//    int result = longestRepeatingCharacterReplacement.characterReplacement("ABBBABBB",2);
     System.out.println(result);
   }
 }
