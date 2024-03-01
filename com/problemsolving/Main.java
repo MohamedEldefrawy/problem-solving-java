@@ -1,13 +1,12 @@
 package com.problemsolving;
 
-import com.problemsolving.stringmanuplation.CamelCase;
-import com.problemsolving.stringmanuplation.SuperReducedString;
+import com.problemsolving.stringmanuplation.Pangrams;
+import com.problemsolving.stringmanuplation.SherlockAndTheValidString;
 
 public class Main {
   public static void main(String[] args) {
-    SuperReducedString superReducedString = new SuperReducedString();
-//    String result = superReducedString.superReducedString("aaabccddd");
-    String result = superReducedString.superReducedString("aa");
+    Pangrams pangrams = new Pangrams();
+    String result = pangrams.pangrams("We promptly judged antique ivory buckles for the next prize");
     System.out.println(result);
   }
 }
